@@ -1,0 +1,17 @@
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+anthropic==0.25.0
+pydantic==2.7.1
+pydantic-settings==2.2.1
+sqlalchemy==2.0.29
+aiosqlite==0.20.0
+httpx==0.27.0
+structlog==24.1.0
+python-dotenv==1.0.1
+
+# Real integrations (used when MOCK_MODE=false)
+snowflake-connector-python==3.10.0
+simple-salesforce==1.12.5
+slack-sdk==3.27.1
+# Zoom uses httpx directly — no SDK needed
+# Gmail uses smtplib (stdlib) — no package needed
